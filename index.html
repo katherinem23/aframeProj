@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starry Night in A-Frame</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene background="color: #000">
+        <!-- Sky with swirling clouds -->
+        <a-sky color="#003399"></a-sky>
+        <!-- Stars -->
+        <a-entity position="0 3 -5" particle-system="preset: stars; particleCount: 5000"></a-entity>
+        <!-- Moon -->
+        <a-sphere position="-10 20 -30" radius="3" color="#FFEBCD"></a-sphere>
+        <!-- Blue swirls -->
+        <a-sphere position="0 8 -20" radius="1" color="#0033CC"></a-sphere>
+        <a-sphere position="5 6 -25" radius="1" color="#0066CC"></a-sphere>
+        <a-sphere position="-5 7 -22" radius="1" color="#003399"></a-sphere>
+        <!-- Yellow swirls -->
+        <a-sphere position="2 12 -18" radius="1" color="#FFFF00"></a-sphere>
+        <a-sphere position="-3 9 -26" radius="2" color="#FFFF66"></a-sphere>
+        <a-sphere position="8 10 -28" radius="1" color="#FFFF99"></a-sphere>
+        <!-- Village buildings -->
+        <a-box position="-20 0 -30" depth="5" height="10" width="5" color="#6e6e6e"></a-box>
+        <a-box position="-15 0 -35" depth="5" height="8" width="5" color="#8c8c8c"></a-box>
+        <a-box position="-10 0 -30" depth="5" height="12" width="5" color="#707070"></a-box>
+        <!-- Trees -->
+        <a-cylinder position="10 0 -15" radius="2" height="15" color="#000000"></a-cylinder>
+        <a-cylinder position="8 0 -17" radius="1" height="20" color="#000000"></a-cylinder>
+        <a-cylinder position="10 0 -18" radius=".8" height="25" color="#000000"></a-cylinder>
+        <a-cylinder position="-17 0 -38" radius="0.5" height="10" color="#000000"></a-cylinder>
+        <a-cylinder position="-12 0 -32" radius="0.5" height="10" color="#000000"></a-cylinder>
+        <!-- Ground -->
+        <a-plane position="0 0 -50" rotation="-90 0 0" width="100" height="100" color="#222"></a-plane>
+    </a-scene>
+</body>
+</html>
+
